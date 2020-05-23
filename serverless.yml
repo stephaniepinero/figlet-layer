@@ -1,0 +1,16 @@
+# serverless.yml
+service: figlet-layer
+
+provider:
+  name: aws
+  region: us-west-2
+  runtime: nodejs12.x
+
+layers:
+  figlet:
+    path: layers
+    name: figlet 
+    compatibleRuntimes: 
+      - nodejs12.x
+      - nodejs10.x
+    retain: false 

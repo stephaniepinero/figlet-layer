@@ -1,0 +1,16 @@
+{
+  "name": "figlet-layer",
+  "version": "1.0.0",
+  "description": "Figlet Layer",
+  "main": "index.js",
+  "scripts": {
+    "remove": "sls remove",
+    "build-layer": "rm -rdf ./layers/nodejs/node_modules && npm install && mv -f node_modules ./layers/nodejs/node_modules",
+    "deploy": "sls deploy --force"
+  },
+  "author": "Stephanie Piñero",
+  "license": "MIT",
+  "dependencies": {
+    "figlet": "^1.4.0"
+  }
+}
